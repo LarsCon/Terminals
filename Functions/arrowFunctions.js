@@ -25,7 +25,8 @@ const newName = capitializeName('laRs');
 console.log(newName + 'How are you?');
 
 function tipCalc(amount){
-    let tip = '$' + .15 * amount;
-    return suggested;
+    tip = (0.15 * amount);
+    return tip.toFixed(2);
 }
-console.log(tip)
+let totalTip = tipCalc(20);
+console.log(totalTip);
