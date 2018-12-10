@@ -18,3 +18,17 @@ function name(first, last){
 }
 
 name('Lars', 'Conard');
+
+let firstName = ['Bill', 'Alex', 'Phil'];
+let lastName = ['Nye', 'Hunt', 'Sanders'];
+console.log(firstName.length);
+
+function fullName(){
+for(i=0; i < firstName.length; i++){
+    lastName.push(firstName[i]);
+    }
+    return lastName
+}
+
+let newArray = fullName(firstName, lastName);
+console.log(newArray);
